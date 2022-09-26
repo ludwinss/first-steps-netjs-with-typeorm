@@ -13,7 +13,6 @@ export const Config: DataSourceOptions = {
     database: process.env.POSTGRES_DATABASE,
     synchronize: true,
     // synchronize: process.env.MODE === "dev",
-    migrationsRun: true,
     entities: [__dirname + '/../**/*.entity.{js,ts}'],
     migrations: [__dirname + '/../**/db/seed/*.{ts,js}'],
     logging: true,
